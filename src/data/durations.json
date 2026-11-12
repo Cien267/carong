@@ -1,0 +1,4 @@
+[
+  { "id": "day", "label": "Trong ngày", "short": "Ngày đi", "note": "Day trip", "priceSuffix": "/ ngày", "hours": 12, "sort": 10 },
+  { "id": "weekend", "label": "Cuối tuần", "short": "Cuối tuần", "note": "48h", "priceSuffix": "/ 48h", "hours": 48, "sort": 20 }
+]

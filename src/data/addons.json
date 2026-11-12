@@ -1,0 +1,7 @@
+[
+  { "id": "extra-beans-tube", "name": "Ống Hạt Specialty Bổ Sung (18g)", "price": 15000, "unit": "1 ống", "description": "Hạt rang mộc tuyển chọn đong sẵn trong ống nghiệm nắp nhôm.", "tags": [], "stock": 30, "image": null, "sort": 10 },
+  { "id": "campfire-cocoa", "name": "Campfire Cocoa & Marshmallow", "price": 30000, "unit": "Set 2 người", "description": "Bột cacao Đắk Lắk sữa béo kèm hũ kẹo xốp nướng lửa trại.", "tags": ["caffeine-free"], "stock": 20, "image": null, "sort": 20 },
+  { "id": "forest-spiced-tea", "name": "Trà Cam Quế Thảo Mộc", "price": 25000, "unit": "Set 2 người", "description": "Cam sấy dẻo, quế chi Yên Bái, đinh hương ấm lồng ngực ban đêm.", "tags": ["caffeine-free"], "stock": 20, "image": null, "sort": 30 },
+  { "id": "mulled-wine-spice", "name": "Gói Gia Vị Rượu Vang Nóng", "price": 39000, "unit": "1 gói gia vị", "description": "Gia vị thảo mộc khô nấu vang nóng trong sương lạnh (khách tự mang rượu).", "tags": [], "stock": 20, "image": null, "sort": 40 },
+  { "id": "gas-canister-new", "name": "Bình Ga Du Lịch Mini Mới 100%", "price": 15000, "unit": "1 bình", "description": "Bình ga tiêu chuẩn an toàn cho bếp dã ngoại.", "tags": [], "stock": 30, "image": null, "sort": 50 }
+]

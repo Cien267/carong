@@ -1,0 +1,23 @@
+---
+import Icon from './icons/Icon.astro';
+import type { Brand, Deposit } from '../lib/schema';
+interface Props { deposits: Deposit[]; wearTearRule: Brand['wearTearRule'] }
+const { deposits, wearTearRule } = Astro.props;
+---
+<section id="dat-coc" class="scroll-mt-14 bg-ink py-12 text-kraft-light md:py-16" aria-labelledby="coc-title">
+  <div class="mx-auto grid max-w-6xl gap-10 px-5 md:grid-cols-2">
+    <div>
+      <h2 id="coc-title" class="font-display text-4xl leading-tight md:text-5xl">Thuê nhẹ nhàng.<br />Đặt cọc rõ ràng.</h2>
+      <p class="mt-4 max-w-sm text-kraft-light/80">Để bạn tập trung vào chuyến đi, không phải lo giữ gìn từng vết xước.</p>
+    </div>
+    <div class="space-y-6">
+      <div>
+        <p class="flex items-center gap-2 font-semibold"><Icon name="shield" size={20} />Chọn một cách đặt cọc</p>
+        <ul class="mt-3 divide-y divide-dashed divide-kraft-light/40 border-y border-dashed border-kraft-light/40">
+          {deposits.map((d) => <li class="py-3">{d.summary}</li>)}
+        </ul>
+      </div>
+      <p class="flex items-start gap-2"><Icon name="box" size={20} class="mt-0.5 shrink-0" />{wearTearRule}</p>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "moka-adventure",
+    "name": "The Moka Adventure",
+    "tag": "Bán chạy nhất",
+    "vibe": "Gu đậm đà, bốc khói ngắm bình minh trên đèo",
+    "items": [
+      { "productId": "moka-pot-150ml", "qty": 1 },
+      { "productId": "cnc-hand-grinder", "qty": 1 },
+      { "productId": "mini-kettle-08l", "qty": 1 },
+      { "productId": "gas-stove-spider", "qty": 1 },
+      { "productId": "camp-aluminum-cup", "qty": 1 },
+      { "productId": "waxed-canvas-bag", "qty": 1 }
+    ],
+    "consumables": [
+      "02 ống nghiệm hạt Specialty đong sẵn (36g)",
+      "Túi giấy lọc tròn Moka",
+      "Thẻ Field Manual hướng dẫn ép giấy Kraft 250gsm"
+    ],
+    "pricing": { "day": 49000, "weekend": 99000 },
+    "stock": 3,
+    "featured": true,
+    "image": null,
+    "sort": 10
+  },
+  {
+    "id": "sunrise-pour",
+    "name": "The Sunrise Pour",
+    "tag": "Hương hoa quả",
+    "vibe": "Gu thanh nhẹ, thư thái giữa sương sớm",
+    "items": [
+      { "productId": "origami-dripper", "qty": 1 },
+      { "productId": "cnc-hand-grinder", "qty": 1 },
+      { "productId": "mini-kettle-08l", "qty": 1 },
+      { "productId": "gas-stove-spider", "qty": 1 },
+      { "productId": "camp-aluminum-cup", "qty": 1 },
+      { "productId": "waxed-canvas-bag", "qty": 1 }
+    ],
+    "consumables": [
+      "02 ống nghiệm Arabica Cầu Đất (36g)",
+      "04 tờ giấy lọc nón dã ngoại",
+      "Thẻ Field Manual hướng dẫn ép giấy Kraft 250gsm"
+    ],
+    "pricing": { "day": 49000, "weekend": 99000 },
+    "stock": 3,
+    "featured": false,
+    "image": null,
+    "sort": 20
+  },
+  {
+    "id": "camp-salt-coffee",
+    "name": "Cà Phê Muối Dã Ngoại",
+    "tag": "Ngọt béo chill",
+    "vibe": "Béo ngậy, bồng bềnh bên lửa trại ven hồ",
+    "items": [
+      { "productId": "phin-aluminum", "qty": 1 },
+      { "productId": "milk-frother", "qty": 1 },
+      { "productId": "mini-kettle-08l", "qty": 1 },
+      { "productId": "gas-stove-spider", "qty": 1 },
+      { "productId": "camp-aluminum-cup", "qty": 1 },
+      { "productId": "waxed-canvas-bag", "qty": 1 }
+    ],
+    "consumables": [
+      "01 hũ bột phin rang mộc (40g)",
+      "02 gói bột kem muối biển béo ngậy",
+      "02 thanh que sữa đặc tiện lợi"
+    ],
+    "pricing": { "day": 49000, "weekend": 89000 },
+    "stock": 3,
+    "featured": false,
+    "image": null,
+    "sort": 30
+  }
+]

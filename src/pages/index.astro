@@ -1,0 +1,48 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import FieldManual from '../components/FieldManual.astro';
+import DepositPolicy from '../components/DepositPolicy.astro';
+import Footer from '../components/Footer.astro';
+import ShopApp from '../components/shop/ShopApp';
+import { catalog, toShopData } from '../lib/catalog';
+import { vndShort } from '../lib/format';
+
+const { brand, durations, combos, products, deposits, manual } = catalog;
+const base = durations[0]!;
+const fromPrice = vndShort(Math.min(...combos.map((c) => c.pricing[base.id] ?? Infinity)));
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@graph': [
+    {
+      '@type': 'LocalBusiness',
+      name: brand.name,
+      description: brand.description,
+      url: Astro.site?.href,
+      priceRange: '₫',
+      areaServed: brand.location.city,
+      address: { '@type': 'PostalAddress', addressLocality: brand.location.city, addressCountry: 'VN' },
+    },
+    ...combos.map((c) => ({
+      '@type': 'Product',
+      name: c.name,
+      description: c.vibe,
+      ...(c.image ? { image: c.image.src } : {}),
+      offers: { '@type': 'Offer', priceCurrency: 'VND', price: c.pricing[base.id], availability: 'https://schema.org/InStock' },
+    })),
+  ],
+};
+---
+<Layout title={brand.seo.title} description={brand.seo.description} jsonLd={jsonLd}>
+  <a id="top" class="sr-only" tabindex="-1"></a>
+  <Header name={brand.name} />
+  <main>
+    <Hero brand={brand} fromPrice={fromPrice} comboCount={combos.length} gearCount={products.length} />
+    <ShopApp client:load data={toShopData()} />
+    <FieldManual steps={manual} />
+    <DepositPolicy deposits={deposits} wearTearRule={brand.wearTearRule} />
+  </main>
+  <Footer brand={brand} />
+</Layout>

@@ -1,0 +1,15 @@
+{
+  "name": "CÀ RONG",
+  "tagline": "Cà phê của những chuyến đi rong",
+  "description": "Thuê bộ kit pha cà phê dã ngoại tại Hà Nội: combo trọn gói hoặc đồ lẻ cho phượt xe máy, trekking, cắm trại. Trả đồ là xong, không phải mua.",
+  "location": { "city": "Hà Nội", "country": "Việt Nam" },
+  "contact": {
+    "zaloPhone": "0900000000",
+    "telegramUser": "carong_rental"
+  },
+  "wearTearRule": "Miễn phí 100% trầy xước hao mòn tự nhiên do đi đường.",
+  "seo": {
+    "title": "Cà Rong — Thuê bộ pha cà phê dã ngoại Hà Nội",
+    "description": "Thuê combo hoặc đồ lẻ pha cà phê dã ngoại ở Hà Nội từ 49.000đ/ngày. Moka, phin, pour over, cối xay CNC, bếp ga mini. Đặt qua Zalo hoặc Telegram."
+  }
+}

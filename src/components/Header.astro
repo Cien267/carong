@@ -1,0 +1,19 @@
+---
+import CartButton from './shop/CartButton';
+interface Props { name: string }
+const { name } = Astro.props;
+---
+<header class="sticky top-0 z-30 h-14 border-b border-dashed border-ink bg-kraft">
+  <div class="mx-auto flex h-full max-w-6xl items-center justify-between px-5">
+    <a href="/" class="flex items-center gap-2.5" aria-label={`${name}, về đầu trang`}>
+      <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="none" stroke="#B84A39" stroke-width="4"/><text x="32" y="41" text-anchor="middle" font-family="Alfa Slab One, Georgia, serif" font-size="24" fill="#B84A39">CÀ</text></svg>
+      <span class="font-display text-xl leading-none">{name}</span>
+    </a>
+    <nav aria-label="Chính" class="hidden items-center gap-6 text-sm md:flex">
+      <a href="#thue" class="hover:underline">Chọn đồ</a>
+      <a href="#cach-pha" class="hover:underline">Cách pha</a>
+      <a href="#dat-coc" class="hover:underline">Đặt cọc</a>
+    </nav>
+    <CartButton client:load />
+  </div>
+</header>

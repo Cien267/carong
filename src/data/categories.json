@@ -1,0 +1,7 @@
+[
+  { "id": "brewer", "label": "Dụng cụ pha", "sort": 10 },
+  { "id": "grinder", "label": "Xay hạt", "sort": 20 },
+  { "id": "cooking", "label": "Đun nấu", "sort": 30 },
+  { "id": "accessory", "label": "Phụ kiện", "sort": 40 },
+  { "id": "bag", "label": "Túi đựng", "sort": 50 }
+]

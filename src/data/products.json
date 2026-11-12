@@ -1,0 +1,11 @@
+[
+  { "id": "moka-pot-150ml", "name": "Ấm Moka Pot 150ml", "categoryId": "brewer", "pricing": { "day": 20000, "weekend": 35000 }, "specs": "Hợp kim nhôm đúc, nắp quai vân gỗ cách nhiệt, van áp suất đồng", "stock": 5, "image": null, "sort": 10 },
+  { "id": "origami-dripper", "name": "Phễu Origami Dã Ngoại", "categoryId": "brewer", "pricing": { "day": 20000, "weekend": 35000 }, "specs": "Nhựa AS chịu nhiệt siêu bền kèm đế gỗ lót phễu", "stock": 5, "image": null, "sort": 20 },
+  { "id": "phin-aluminum", "name": "Phin Nhôm Anod Dã Ngoại", "categoryId": "brewer", "pricing": { "day": 10000, "weekend": 15000 }, "specs": "Nhôm Anodized mờ chống oxy hóa, lỗ dập đều chiết xuất đậm", "stock": 5, "image": null, "sort": 30 },
+  { "id": "cnc-hand-grinder", "name": "Cối Xay Tay CNC 5 Trục", "categoryId": "grinder", "pricing": { "day": 25000, "weekend": 45000 }, "specs": "Lưỡi thép không gỉ cắt CNC siêu bén, chỉnh được 36 nấc mịn thô", "stock": 6, "image": null, "sort": 40 },
+  { "id": "mini-kettle-08l", "name": "Siêu Nhôm Lùn 0.8L", "categoryId": "cooking", "pricing": { "day": 15000, "weekend": 25000 }, "specs": "Nhôm siêu nhẹ, quai bọc silicon chống nóng, đun sôi trong 3 phút", "stock": 8, "image": null, "sort": 50 },
+  { "id": "gas-stove-spider", "name": "Bếp Ga Mini Chân Nhện", "categoryId": "cooking", "pricing": { "day": 20000, "weekend": 35000 }, "specs": "Dây dẫn rời chống nóng bình ga, đầu chuyển đổi bình ga du lịch", "stock": 8, "image": null, "sort": 60 },
+  { "id": "camp-aluminum-cup", "name": "Ly Nhôm Dã Ngoại (Cặp 2 Chiếc)", "categoryId": "accessory", "pricing": { "day": 10000, "weekend": 15000 }, "specs": "Nhôm mờ cách nhiệt, quai xếp gập gọn ghẽ", "stock": 10, "image": null, "sort": 70 },
+  { "id": "milk-frother", "name": "Máy Đánh Bọt Mini Cầm Tay", "categoryId": "accessory", "pricing": { "day": 10000, "weekend": 15000 }, "specs": "Chạy pin AA, đánh bông kem muối trong 20 giây", "stock": 5, "image": null, "sort": 80 },
+  { "id": "waxed-canvas-bag", "name": "Túi Canvas Sáp Chống Sốc", "categoryId": "bag", "pricing": { "day": 15000, "weekend": 25000 }, "specs": "Vải Canvas phủ sáp kháng nước, lót mút xốp chống dằn xóc xe máy", "stock": 8, "image": null, "sort": 90 }
+]

@@ -1,0 +1,18 @@
+[
+  {
+    "id": "id-plus-cash",
+    "label": "Giấy tờ + cọc nhẹ",
+    "summary": "01 CCCD gốc / GPLX + 200.000đ cọc bảo đảm",
+    "cash": 200000,
+    "requiresId": true,
+    "sort": 10
+  },
+  {
+    "id": "cash-only",
+    "label": "Cọc tiền mặt",
+    "summary": "Cọc tiền mặt 500.000đ (hoàn trả ngay khi trả đồ)",
+    "cash": 500000,
+    "requiresId": false,
+    "sort": 20
+  }
+]

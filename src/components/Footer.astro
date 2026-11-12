@@ -1,0 +1,18 @@
+---
+import type { Brand } from '../lib/schema';
+interface Props { brand: Brand }
+const { brand } = Astro.props;
+---
+<footer class="border-t border-dashed border-ink pb-24 pt-8 md:pb-8">
+  <div class="mx-auto flex max-w-6xl flex-col gap-4 px-5 sm:flex-row sm:items-center sm:justify-between">
+    <div>
+      <p class="font-display text-xl">{brand.name}</p>
+      <p class="meta">{brand.tagline} · {brand.location.city}, {brand.location.country}</p>
+    </div>
+    <div class="meta flex gap-4">
+      <a class="underline" href={`https://zalo.me/${brand.contact.zaloPhone}`} rel="noopener">Zalo</a>
+      <a class="underline" href={`https://t.me/${brand.contact.telegramUser}`} rel="noopener">Telegram</a>
+      <a class="underline" href="#top">Lên đầu trang</a>
+    </div>
+  </div>
+</footer>

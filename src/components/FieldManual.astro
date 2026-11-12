@@ -1,0 +1,26 @@
+---
+import Icon from './icons/Icon.astro';
+import type { ManualStep } from '../lib/schema';
+interface Props { steps: ManualStep[] }
+const { steps } = Astro.props;
+---
+<section id="cach-pha" class="scroll-mt-14 border-y border-dashed border-ink bg-kraft-deep py-12 md:py-16" aria-labelledby="manual-title">
+  <div class="mx-auto max-w-6xl px-5">
+    <h2 id="manual-title" class="font-display text-4xl md:text-6xl">Field Manual</h2>
+    <p class="mt-2 max-w-md text-ink/80">Ba nhịp chậm giữa chuyến đi. Thẻ hướng dẫn chi tiết nằm sẵn trong túi kit.</p>
+
+    <ol class="stamp mt-8 grid md:grid-cols-3">
+      {steps.map((s, i) => (
+        <li class={`p-5 ${i > 0 ? 'border-t border-dashed border-ink md:border-l md:border-t-0' : ''}`}>
+          <div class="flex items-center justify-between">
+            <span class="meta">Bước {i + 1}/{steps.length}</span>
+            <Icon name={s.icon} size={28} />
+          </div>
+          <h3 class="mt-4 font-display text-2xl">{s.title}</h3>
+          <p class="mt-2 text-[15px] leading-relaxed text-ink/85">{s.body}</p>
+          <p class="meta mt-4 border-t border-dashed border-ink pt-3">{s.hint}</p>
+        </li>
+      ))}
+    </ol>
+  </div>
+</section>
