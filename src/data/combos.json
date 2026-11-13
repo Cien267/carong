@@ -20,7 +20,10 @@
     "pricing": { "day": 49000, "weekend": 99000 },
     "stock": 3,
     "featured": true,
-    "image": null,
+    "image": {
+      "src": "images/moka-combo.jpg",
+      "alt": "The Moka Adventure"
+    },
     "sort": 10
   },
   {
@@ -44,7 +47,10 @@
     "pricing": { "day": 49000, "weekend": 99000 },
     "stock": 3,
     "featured": false,
-    "image": null,
+    "image": {
+      "src": "images/pour-combo.jpg",
+      "alt": "The Sunrise Pour"
+    },
     "sort": 20
   },
   {
@@ -68,7 +74,10 @@
     "pricing": { "day": 49000, "weekend": 89000 },
     "stock": 3,
     "featured": false,
-    "image": null,
+    "image": {
+      "src": "images/phin-combo.jpg",
+      "alt": "Cà Phê Muối Dã Ngoại"
+    },
     "sort": 30
   }
 ]
