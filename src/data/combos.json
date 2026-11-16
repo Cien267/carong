@@ -1,9 +1,9 @@
 [
   {
-    "id": "moka-adventure",
-    "name": "The Moka Adventure",
+    "id": "moka-pot",
+    "name": "Bộ pha Moka",
     "tag": "Bán chạy nhất",
-    "vibe": "Gu đậm đà, bốc khói ngắm bình minh trên đèo",
+    "vibe": "Gu đậm đà",
     "items": [
       { "productId": "moka-pot-150ml", "qty": 1 },
       { "productId": "cnc-hand-grinder", "qty": 1 },
@@ -13,24 +13,24 @@
       { "productId": "waxed-canvas-bag", "qty": 1 }
     ],
     "consumables": [
-      "02 ống nghiệm hạt Specialty đong sẵn (36g)",
+      "02 ống hạt Specialty đong sẵn (36g)",
       "Túi giấy lọc tròn Moka",
-      "Thẻ Field Manual hướng dẫn ép giấy Kraft 250gsm"
+      "Thẻ hướng dẫn pha"
     ],
     "pricing": { "day": 49000, "weekend": 99000 },
     "stock": 3,
     "featured": true,
     "image": {
       "src": "images/moka-combo.jpg",
-      "alt": "The Moka Adventure"
+      "alt": "Bộ pha Moka"
     },
     "sort": 10
   },
   {
-    "id": "sunrise-pour",
-    "name": "The Sunrise Pour",
+    "id": "pour-over",
+    "name": "Bộ pha Pour Over",
     "tag": "Hương hoa quả",
-    "vibe": "Gu thanh nhẹ, thư thái giữa sương sớm",
+    "vibe": "Gu thanh nhẹ",
     "items": [
       { "productId": "origami-dripper", "qty": 1 },
       { "productId": "cnc-hand-grinder", "qty": 1 },
@@ -40,24 +40,24 @@
       { "productId": "waxed-canvas-bag", "qty": 1 }
     ],
     "consumables": [
-      "02 ống nghiệm Arabica Cầu Đất (36g)",
+      "02 ống Arabica Cầu Đất (36g)",
       "04 tờ giấy lọc nón dã ngoại",
-      "Thẻ Field Manual hướng dẫn ép giấy Kraft 250gsm"
+      "Thẻ hướng dẫn pha"
     ],
     "pricing": { "day": 49000, "weekend": 99000 },
     "stock": 3,
     "featured": false,
     "image": {
       "src": "images/pour-combo.jpg",
-      "alt": "The Sunrise Pour"
+      "alt": "Bộ pha Pour Over"
     },
     "sort": 20
   },
   {
-    "id": "camp-salt-coffee",
-    "name": "Cà Phê Muối Dã Ngoại",
-    "tag": "Ngọt béo chill",
-    "vibe": "Béo ngậy, bồng bềnh bên lửa trại ven hồ",
+    "id": "salt-coffee",
+    "name": "Bộ cà phê muối",
+    "tag": "Béo ngọt, dễ uống",
+    "vibe": "Gu béo ngậy, cân bằng",
     "items": [
       { "productId": "phin-aluminum", "qty": 1 },
       { "productId": "milk-frother", "qty": 1 },
@@ -68,15 +68,15 @@
     ],
     "consumables": [
       "01 hũ bột phin rang mộc (40g)",
-      "02 gói bột kem muối biển béo ngậy",
-      "02 thanh que sữa đặc tiện lợi"
+      "02 gói bột kem muối",
+      "Sữa đặc"
     ],
     "pricing": { "day": 49000, "weekend": 89000 },
     "stock": 3,
     "featured": false,
     "image": {
       "src": "images/phin-combo.jpg",
-      "alt": "Cà Phê Muối Dã Ngoại"
+      "alt": "Bộ cà phê muối"
     },
     "sort": 30
   }

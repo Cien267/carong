@@ -1,5 +1,23 @@
 [
-  { "id": "grind", "icon": "grinder", "title": "Xay hạt", "body": "Xay vừa đủ cho buổi sáng. Mở ống hạt Specialty đã đong sẵn, đổ vào cối.", "hint": "Chỉnh nấc theo dụng cụ pha" },
-  { "id": "brew", "icon": "flame", "title": "Đun và pha", "body": "Thêm nước vào ấm, châm bếp nhỏ và để hương cà phê thong thả lan ra.", "hint": "Chọn nơi khuất gió, nền phẳng" },
-  { "id": "pour", "icon": "cup", "title": "Rót ra ly", "body": "Rót hai ly, ngồi xuống, để con đường chờ mình thêm vài phút.", "hint": "Ly nhôm nóng, cầm quai" }
+  {
+    "id": "grind",
+    "icon": "grinder",
+    "title": "Xay hạt",
+    "body": "Xay vừa đủ. Mở ống hạt đã đong sẵn, đổ vào cối.",
+    "hint": "Mỗi dụng cụ cần độ xay khác nhau, thẻ hướng dẫn có ghi sẵn."
+  },
+  {
+    "id": "brew",
+    "icon": "flame",
+    "title": "Đun và pha",
+    "body": "Đổ nước vào ấm, bật bếp gas mini đun sôi, rồi pha bằng dụng cụ có trong bộ bạn thuê.",
+    "hint": "Chọn nơi khuất gió, nền phẳng"
+  },
+  {
+    "id": "pour",
+    "icon": "cup",
+    "title": "Rót ra ly",
+    "body": "Rót cà phê ra và thong thả nhâm nhi.",
+    "hint": "Cà phê nóng, cẩn thận khi rót ra ly."
+  }
 ]
