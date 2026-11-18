@@ -14,7 +14,7 @@ const { deposits, wearTearRule } = Astro.props;
       <div>
         <p class="flex items-center gap-2 font-semibold"><Icon name="shield" size={20} />Chọn một cách đặt cọc</p>
         <ul class="mt-3 divide-y divide-dashed divide-kraft-light/40 border-y border-dashed border-kraft-light/40">
-          {deposits.map((d) => <li class="py-3">{d.summary}</li>)}
+          {deposits.map((d) => <li class="py-3">‣ {d.summary}</li>)}
         </ul>
       </div>
       <p class="flex items-start gap-2"><Icon name="box" size={20} class="mt-0.5 shrink-0" />{wearTearRule}</p>

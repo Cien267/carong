@@ -1,15 +1,15 @@
 {
   "name": "CÀ RONG",
-  "tagline": "Cà phê của những chuyến đi",
+  "tagline": "Cà phê của những chuyến đi rong",
   "description": "Cho thuê dụng cụ pha cà phê tại Hà Nội, thuê cả combo hoặc từng món, dùng cho phượt xe máy, trekking và cắm trại. Dùng xong bạn chỉ cần mang trả, không phải mua.",
   "location": { "city": "Hà Nội", "country": "Việt Nam" },
   "contact": {
     "zaloPhone": "0866015505",
-    "telegramUser": "carong_rental"
+    "tiktokId": "cien.khong.o.nha"
   },
   "wearTearRule": "Miễn phí 100% trầy xước hao mòn tự nhiên do đi đường.",
   "seo": {
     "title": "Cà Rong — Thuê bộ pha cà phê dã ngoại Hà Nội",
-    "description": "Thuê combo hoặc đồ lẻ pha cà phê dã ngoại ở Hà Nội từ 49.000đ/ngày. Moka, phin, pour over, cối xay, bếp ga mini. Đặt qua Zalo hoặc Telegram."
+    "description": "Thuê combo hoặc đồ lẻ pha cà phê dã ngoại ở Hà Nội từ 49.000đ/ngày. Moka, phin, pour over, cối xay, bếp ga mini. Đặt qua Zalo hoặc Tiktok."
   }
 }

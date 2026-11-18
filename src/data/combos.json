@@ -9,7 +9,7 @@
       { "productId": "cnc-hand-grinder", "qty": 1 },
       { "productId": "mini-kettle-08l", "qty": 1 },
       { "productId": "gas-stove-spider", "qty": 1 },
-      { "productId": "camp-aluminum-cup", "qty": 1 },
+      { "productId": "paper-cup", "qty": 1 },
       { "productId": "waxed-canvas-bag", "qty": 1 }
     ],
     "consumables": [
@@ -32,11 +32,11 @@
     "tag": "Hương hoa quả",
     "vibe": "Gu thanh nhẹ",
     "items": [
-      { "productId": "origami-dripper", "qty": 1 },
+      { "productId": "glass-dripper", "qty": 1 },
       { "productId": "cnc-hand-grinder", "qty": 1 },
       { "productId": "mini-kettle-08l", "qty": 1 },
       { "productId": "gas-stove-spider", "qty": 1 },
-      { "productId": "camp-aluminum-cup", "qty": 1 },
+      { "productId": "paper-cup", "qty": 1 },
       { "productId": "waxed-canvas-bag", "qty": 1 }
     ],
     "consumables": [
@@ -59,11 +59,11 @@
     "tag": "Béo ngọt, dễ uống",
     "vibe": "Gu béo ngậy, cân bằng",
     "items": [
-      { "productId": "phin-aluminum", "qty": 1 },
+      { "productId": "phin", "qty": 1 },
       { "productId": "milk-frother", "qty": 1 },
       { "productId": "mini-kettle-08l", "qty": 1 },
       { "productId": "gas-stove-spider", "qty": 1 },
-      { "productId": "camp-aluminum-cup", "qty": 1 },
+      { "productId": "paper-cup", "qty": 1 },
       { "productId": "waxed-canvas-bag", "qty": 1 }
     ],
     "consumables": [

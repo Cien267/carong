@@ -67,7 +67,7 @@ export default function ShopApp({ data }: { data: ShopData }) {
       tabIndex={tab === id ? 0 : -1}
       onClick={() => setTab(id)}
       onKeyDown={onTabKey}
-      className={`min-h-12 flex-1 px-3 py-2 text-left ${tab === id ? "bg-ink text-kraft-light" : "hover:bg-kraft-light"}`}
+      className={`min-h-12 flex-1 px-3 py-2 text-center md:text-left ${tab === id ? "bg-ink text-kraft-light" : "hover:bg-kraft-light"}`}
     >
       <span className="block font-semibold leading-tight">{label}</span>
       <span className="block font-mono text-[11px] opacity-75">{sub}</span>

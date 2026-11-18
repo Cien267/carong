@@ -5,7 +5,7 @@ import { vnd } from "../../lib/format"
 import {
   buildOrderMessage,
   newOrderCode,
-  telegramUrl,
+  tiktokUrl,
   validateCustomer,
   zaloUrl,
   type CustomerErrors,
@@ -72,7 +72,7 @@ export default function CartDrawer({
     }
   }, [open])
 
-  function send(channel: "zalo" | "telegram") {
+  function send(channel: "zalo" | "tiktok") {
     const errs = validateCustomer(customer, todayLocal())
     setErrors(errs)
     if (Object.keys(errs).length > 0) {
@@ -87,27 +87,21 @@ export default function CartDrawer({
       deposit,
       customer,
     })
-    if (channel === "telegram") {
-      window.open(
-        telegramUrl(data.contact.telegramUser, text),
-        "_blank",
-        "noopener",
-      )
-      toast.success("Đã mở Telegram với nội dung đơn. Bấm gửi để chốt.")
+    if (channel === "tiktok") {
+      window.open(tiktokUrl(data.contact.tiktokId), "_blank", "noopener")
     } else {
       // Zalo không cho điền sẵn tin nhắn: chép đơn vào clipboard rồi mở chat.
       window.open(zaloUrl(data.contact.zaloPhone), "_blank", "noopener")
-      navigator.clipboard?.writeText(text).then(
-        () =>
-          toast.success(
-            "Đã chép nội dung đơn. Dán vào khung chat Zalo rồi gửi.",
-          ),
-        () =>
-          toast.error(
-            'Không chép tự động được. Mở "Xem nội dung đơn" bên dưới và chép tay.',
-          ),
-      )
     }
+
+    navigator.clipboard?.writeText(text).then(
+      () =>
+        toast.success("Đã sao chép nội dung đơn. Dán vào khung chat rồi gửi."),
+      () =>
+        toast.error(
+          'Không chép tự động được. Mở "Xem nội dung đơn" bên dưới và chép tay.',
+        ),
+    )
   }
 
   const err = (k: keyof CustomerErrors) => errors[k]
@@ -345,9 +339,9 @@ export default function CartDrawer({
             <button
               type="button"
               className="btn btn-ink"
-              onClick={() => send("telegram")}
+              onClick={() => send("tiktok")}
             >
-              Đặt qua Telegram
+              Đặt qua Tiktok
             </button>
           </div>
         </footer>
