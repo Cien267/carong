@@ -1,0 +1,40 @@
+---
+import Icon from './icons/Icon.astro';
+import type { Policy } from '../lib/schema';
+import type { IconName } from './icons/paths';
+interface Props { policies: Policy }
+const { policies } = Astro.props;
+const rows: { icon: IconName; label: string; text: string }[] = [
+  { icon: 'pin', label: 'Khu vực nhận đồ', text: `${policies.pickup.area}. ${policies.pickup.addressNote}` },
+  { icon: 'clock', label: 'Giờ nhận và trả', text: policies.pickup.hours },
+  ...(policies.delivery.available ? [{ icon: 'box' as IconName, label: 'Giao tận nơi', text: policies.delivery.note }] : []),
+];
+---
+<section id="nhan-tra" class="scroll-mt-14 py-12 md:py-16" aria-labelledby="nhan-tra-title">
+  <div class="mx-auto grid max-w-6xl gap-10 px-5 md:grid-cols-2 md:gap-14">
+    <div>
+      <h2 id="nhan-tra-title" class="font-display text-4xl leading-tight md:text-5xl">Nhận và trả đồ</h2>
+      <dl class="mt-6 divide-y divide-dashed divide-ink border-y border-dashed border-ink">
+        {rows.map((r) => (
+          <div class="flex gap-4 py-4">
+            <Icon name={r.icon} size={24} class="mt-1 shrink-0" />
+            <div>
+              <dt class="font-semibold">{r.label}</dt>
+              <dd class="mt-1 leading-relaxed text-ink/85">{r.text}</dd>
+            </div>
+          </div>
+        ))}
+      </dl>
+    </div>
+
+    <div class="stamp self-start bg-kraft-light/60 p-6">
+      <h3 class="font-display text-2xl">Điều khoản ngắn gọn</h3>
+      <ul class="mt-4 space-y-3 leading-relaxed">
+        {policies.highlights.map((h) => (
+          <li class="flex gap-3"><span aria-hidden="true" class="mt-2.5 size-1.5 shrink-0 bg-terra"></span>{h}</li>
+        ))}
+      </ul>
+      <a href="/dieu-khoan" class="btn btn-ghost mt-6">Đọc điều khoản đầy đủ</a>
+    </div>
+  </div>
+</section>

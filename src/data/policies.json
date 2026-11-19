@@ -1,0 +1,19 @@
+{
+  "pickup": {
+    "area": "Mễ Trì, Hà Nội",
+    "hours": "Cả ngày.",
+    "addressNote": "Địa chỉ chi tiết chúng mình sẽ gửi khi xác nhận đơn."
+  },
+  "delivery": {
+    "available": true,
+    "note": "Phí vận chuyển tính theo ứng dụng giao hàng."
+  },
+  "lateGraceHours": 2,
+  "lateFeeUnitHours": 24,
+  "freeCancelNoticeHours": 12,
+  "highlights": [
+    "Bạn trả trễ trong vòng {lateGraceHours} giờ thì không bị tính phí. Trễ hơn thì chúng mình xin phép tính thêm 1 ngày thuê.",
+    "Đồ hao mòn thông thường khi đi đường thì không tính phí. Nếu làm hỏng nặng hoặc làm mất, chúng mình sẽ tính theo giá sửa hoặc giá thay mới.",
+    "Bạn hủy đơn hoặc dời ngày miễn phí nếu báo chúng mình trước giờ nhận ít nhất {freeCancelNoticeHours} giờ."
+  ]
+}

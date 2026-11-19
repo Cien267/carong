@@ -1,0 +1,100 @@
+---
+import { getCollection, render } from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Placeholder  from '../../components/shop/Placeholder.tsx';
+import { catalog } from '../../lib/catalog';
+import { fmtDate, vnd } from '../../lib/format';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('journal', (p) => !p.data.draft);
+  const comboIds = new Set(catalog.combos.map((c) => c.id));
+  const productIds = new Set(catalog.products.map((p) => p.id));
+  for (const p of posts) {
+    if (p.data.comboId && !comboIds.has(p.data.comboId)) {
+      throw new Error(`[journal] ${p.id}: comboId "${p.data.comboId}" không tồn tại`);
+    }
+    for (const id of p.data.productIds) {
+      if (!productIds.has(id)) throw new Error(`[journal] ${p.id}: productIds có "${id}" không tồn tại hoặc đang tắt`);
+    }
+  }
+  return posts.map((post) => ({ params: { slug: post.id }, props: { post } }));
+}
+
+const { post } = Astro.props;
+const { brand, combos, products, durations } = catalog;
+const { Content } = await render(post);
+const d = post.data;
+const combo = combos.find((c) => c.id === d.comboId);
+const gear = [...new Set(d.productIds)].map((id) => products.find((p) => p.id === id)!);
+const base = durations[0]!;
+
+const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: d.title,
+  description: d.description,
+  datePublished: d.date.toISOString(),
+  ...(d.cover ? { image: new URL(d.cover.src, Astro.site).href } : {}),
+  author: { '@type': 'Organization', name: brand.name },
+};
+---
+<Layout title={`${d.title} | ${brand.name}`} description={d.description} ogType="article" image={d.cover?.src ?? null} jsonLd={jsonLd}>
+  <Header name={brand.name} />
+  <main>
+    <article class="mx-auto max-w-3xl px-5 py-10 md:py-14">
+      <a href="/nhat-ky" class="meta underline">Quay lại Nhật ký</a>
+      <p class="meta mt-6">{fmtDate(d.date)} · {d.place}</p>
+      <h1 class="mt-2 font-display text-3xl leading-tight md:text-5xl">{d.title}</h1>
+
+      <Placeholder image={d.cover} label="ảnh bìa" className="mt-8 aspect-[16/10]" eager />
+
+      <p class="mt-8 text-xl leading-relaxed">{d.intro}</p>
+
+      {d.photos.length > 0 && (
+        <div class="mt-10 grid gap-6 sm:grid-cols-2">
+          {d.photos.map((ph) => (
+            <figure>
+              <Placeholder image={ph.src ? { src: ph.src, alt: ph.alt } : null} label={ph.caption} className="aspect-[4/3]" />
+              <figcaption class="meta mt-2">{ph.caption}</figcaption>
+            </figure>
+          ))}
+        </div>
+      )}
+
+      <div class="prose-carong mt-10"><Content /></div>
+
+      {combo && (
+        <aside class="stamp mt-12 bg-kraft-light/60 p-6">
+          <p class="meta">Bộ pha dùng trong chuyến này</p>
+          <p class="mt-1 font-display text-2xl">{combo.name}</p>
+          <p class="mt-2 text-ink/85">{combo.vibe}.</p>
+          <a href="/#thue" class="btn btn-primary mt-5">Xem bộ này để thuê</a>
+        </aside>
+      )}
+
+      {gear.length > 0 && (
+        <section class="mt-10" aria-labelledby="gear-title">
+          <h2 id="gear-title" class="font-display text-2xl">Đồ dùng trong chuyến này</h2>
+          <p class="mt-2 text-ink/85">Bạn chưa cần cả bộ thì có thể thuê lẻ từng món bên dưới.</p>
+          <ul class="mt-4 divide-y divide-dashed divide-ink border-y border-dashed border-ink">
+            {gear.map((p) => (
+              <li>
+                <a href="/#do-le" class="flex items-center gap-4 py-3 px-2 hover:bg-kraft-light/60">
+                  <Placeholder image={p.image} label={p.name} className="size-16 shrink-0" />
+                  <span class="min-w-0 flex-1">
+                    <span class="block font-semibold leading-snug">{p.name}</span>
+                    <span class="meta block">{vnd(p.pricing[base.id] ?? 0)} {base.priceSuffix}</span>
+                  </span>
+                  <span class="meta shrink-0 underline">Thuê món này</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+    </article>
+  </main>
+  <Footer brand={brand} />
+</Layout>

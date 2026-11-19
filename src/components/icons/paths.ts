@@ -20,6 +20,7 @@ export const ICONS = {
   pin: "M12 21s7-6 7-11a7 7 0 0 0-14 0c0 5 7 11 7 11ZM12 7.500a2.500 2.500 0 1 0 0 5 2.500 2.500 0 0 0 0-5Z",
   clock: "M12 4a8 8 0 1 0 0 16 8 8 0 0 0 0-16ZM12 8v4l3 2",
   bean: "M12 3c4 0 7 4 7 9s-3 9-7 9-7-4-7-9 3-9 7-9ZM12 4c-2.500 4 2.500 8 0 16",
+  menu: "M4 7h16M4 12h16M4 17h16",
 } as const
 
 export type IconName = keyof typeof ICONS

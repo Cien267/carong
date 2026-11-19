@@ -1,0 +1,30 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { catalog } from '../lib/catalog';
+
+const { brand, terms } = catalog;
+---
+<Layout title={`Điều khoản thuê | ${brand.name}`} description="Quy định thuê dụng cụ pha cà phê tại Cà Rong: nhận trả đồ, đặt cọc, trả trễ, đền bù, hủy và dời ngày.">
+  <Header name={brand.name} />
+  <main class="mx-auto max-w-3xl px-5 py-12 md:py-16">
+    <h1 class="font-display text-4xl leading-tight md:text-6xl">Điều khoản thuê</h1>
+    <nav aria-label="Mục lục" class="stamp mt-8 bg-kraft-light/60 p-4">
+      <ol class="grid gap-x-6 gap-y-1 text-sm sm:grid-cols-2">
+        {terms.map((s, i) => <li><a class="underline" href={`#${s.id}`}>{i + 1}. {s.title}</a></li>)}
+      </ol>
+    </nav>
+    <div class="mt-10 space-y-10">
+      {terms.map((s, i) => (
+        <section id={s.id} class="scroll-mt-20" aria-labelledby={`${s.id}-title`}>
+          <h2 id={`${s.id}-title`} class="font-display text-2xl">{i + 1}. {s.title}</h2>
+          <ul class="prose-carong mt-4 space-y-3 !list-none !pl-0">
+            {s.items.map((t) => <li class="border-l-2 border-dashed border-ink pl-4">{t}</li>)}
+          </ul>
+        </section>
+      ))}
+    </div>
+  </main>
+  <Footer brand={brand} />
+</Layout>

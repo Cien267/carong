@@ -1,0 +1,14 @@
+---
+import Placeholder from './shop/Placeholder.tsx';
+import { fmtDate } from '../lib/format';
+interface Props { slug: string; title: string; description: string; date: Date; place: string; cover: { src: string; alt: string } | null }
+const { slug, title, description, date, place, cover } = Astro.props;
+---
+<article class="stamp relative flex flex-col bg-kraft-light/60 p-3">
+  <Placeholder image={cover} label={title} className="aspect-[4/3]" />
+  <p class="meta mt-4">{fmtDate(date)} · {place}</p>
+  <h3 class="mt-1 font-display text-xl leading-snug">
+    <a href={`/nhat-ky/${slug}`} class="after:absolute after:inset-0 hover:underline">{title}</a>
+  </h3>
+  <p class="mt-2 text-[15px] leading-relaxed text-ink/85">{description}</p>
+</article>

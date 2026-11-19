@@ -1,0 +1,19 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { catalog } from '../lib/catalog';
+const { brand } = catalog;
+---
+<Layout title={`Không tìm thấy trang | ${brand.name}`} description="Trang bạn tìm không tồn tại.">
+  <Header name={brand.name} />
+  <main class="flex items-center justify-center px-5 py-16 md:py-24">
+    <div class="max-w-xl text-center">
+      <p class="meta">Lỗi 404</p>
+      <h1 class="mt-3 font-display text-4xl leading-tight md:text-5xl">Không tìm thấy trang này</h1>
+      <p class="mt-4 text-ink/85">Đường dẫn có thể đã bị đổi hoặc gõ sai.</p>
+      <a href="/" class="btn btn-primary mt-8">Về trang chủ</a>
+    </div>
+  </main>
+  <Footer brand={brand} />
+</Layout>

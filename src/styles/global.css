@@ -211,3 +211,43 @@
     width: 100%;
   }
 }
+
+/* =========================================
+   CUSTOM KRAFT & TACTICAL SCROLLBAR
+   ========================================= */
+
+/* Hỗ trợ cho Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #1a1715 #dfc9ae;
+}
+
+/* Hỗ trợ cho Chrome, Edge, Safari */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+/* Rãnh cuộn (Track): Tông giấy Kraft trầm hơn nền chính một chút + đường kẻ biên */
+::-webkit-scrollbar-track {
+  background-color: #dfc9ae;
+  border-left: 1px solid rgba(26, 23, 21, 0.25);
+}
+
+/* Con trượt (Thumb): Khối mực đen than góc vuông vức */
+::-webkit-scrollbar-thumb {
+  background-color: #1a1715;
+  border: 2px solid #dfc9ae; /* Tạo khoảng hở 2px hai bên giống khe trượt cơ khí */
+  border-radius: 0px;
+}
+
+/* Khi di chuột hoặc kéo thanh cuộn: Chuyển sang màu đỏ gạch Terracotta */
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+  background-color: #b84a39;
+}
+
+/* Góc giao nhau (nếu có cuộn ngang + dọc) */
+::-webkit-scrollbar-corner {
+  background-color: #dfc9ae;
+}

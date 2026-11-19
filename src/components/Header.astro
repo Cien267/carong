@@ -1,19 +1,68 @@
 ---
 import CartButton from './shop/CartButton';
-interface Props { name: string }
-const { name } = Astro.props;
+import Icon from './icons/Icon.astro';
+interface Props { name: string; showCart?: boolean }
+const { name, showCart = false } = Astro.props;
+const links = [
+  { href: '/#thue', label: 'Chọn đồ' },
+  { href: '/#cach-pha', label: 'Cách pha' },
+  { href: '/#nhan-tra', label: 'Nhận trả' },
+  { href: '/#hoi-dap', label: 'Hỏi đáp' },
+  { href: '/nhat-ky', label: 'Nhật ký' },
+];
 ---
 <header class="sticky top-0 z-30 h-14 border-b border-dashed border-ink bg-kraft">
-  <div class="mx-auto flex h-full max-w-6xl items-center justify-between px-5">
-    <a href="/" class="flex items-center gap-2.5" aria-label={`${name}, về đầu trang`}>
+  <div class="mx-auto flex h-full max-w-6xl items-center justify-between gap-3 px-5">
+    <a href="/" class="flex shrink-0 items-center gap-2.5" aria-label={`${name}, về trang chủ`}>
       <svg width="34" height="34" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="28" fill="none" stroke="#B84A39" stroke-width="4"/><text x="32" y="41" text-anchor="middle" font-family="Alfa Slab One, Georgia, serif" font-size="24" fill="#B84A39">CÀ</text></svg>
       <span class="font-display text-xl leading-none">{name}</span>
     </a>
+
     <nav aria-label="Chính" class="hidden items-center gap-6 text-sm md:flex">
-      <a href="#thue" class="hover:underline">Chọn đồ</a>
-      <a href="#cach-pha" class="hover:underline">Cách pha</a>
-      <a href="#dat-coc" class="hover:underline">Đặt cọc</a>
+      {links.map((l) => <a href={l.href} class="hover:underline">{l.label}</a>)}
     </nav>
-    <CartButton client:load />
+
+    <div class="flex items-center gap-2">
+      {showCart ? (
+        <CartButton client:load />
+      ) : (
+        <a href="/#thue" class="btn btn-primary !min-h-10 !px-3">
+          <span class="sm:hidden">Chọn đồ</span><span class="hidden sm:inline">Chọn đồ để thuê</span>
+        </a>
+      )}
+
+      <!-- Menu trên điện thoại: dùng <details> nên chạy được cả khi chưa tải JS -->
+      <details id="mobile-menu" class="group md:hidden">
+        <summary class="grid size-10 cursor-pointer list-none place-items-center border-[1.5px] border-ink bg-kraft-light [&::-webkit-details-marker]:hidden" aria-label="Mở menu">
+          <Icon name="menu" class="group-open:hidden" />
+          <Icon name="close" class="hidden group-open:block" />
+        </summary>
+        <nav aria-label="Menu" class="absolute inset-x-0 top-full border-b border-dashed border-ink bg-kraft shadow-[0_8px_0_rgb(26_23_21/0.08)]">
+          <ul class="mx-auto max-w-6xl px-5 py-2">
+            {links.map((l) => (
+              <li class="border-b border-dashed border-ink/40 last:border-b-0">
+                <a href={l.href} class="flex min-h-12 items-center font-semibold">{l.label}</a>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </details>
+    </div>
   </div>
 </header>
+
+<script>
+  const menu = document.getElementById('mobile-menu') as HTMLDetailsElement | null;
+  if (menu) {
+    // Chạm vào link, chạm ra ngoài hoặc bấm Esc thì đóng menu.
+    menu.addEventListener('click', (e) => {
+      if ((e.target as HTMLElement).closest('a')) menu.open = false;
+    });
+    document.addEventListener('click', (e) => {
+      if (menu.open && !menu.contains(e.target as Node)) menu.open = false;
+    });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') menu.open = false;
+    });
+  }
+</script>

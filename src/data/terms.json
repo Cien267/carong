@@ -1,0 +1,81 @@
+[
+  {
+    "id": "intro",
+    "title": "Giới thiệu",
+    "items": [
+      "Trang này giải thích cách Cà Rong cho thuê dụng cụ pha cà phê. Khi đặt thuê, bạn đồng ý với các điều khoản dưới đây.",
+      "Mọi đơn thuê được xác nhận qua Zalo hoặc Tiktok. Đơn chỉ có hiệu lực sau khi mình đã nhắn tin xác nhận lại với bạn."
+    ]
+  },
+  {
+    "id": "pickup",
+    "title": "Nhận và trả đồ",
+    "items": [
+      "Bạn nhận và trả đồ tại khu vực {area}. {addressNote}",
+      "Chúng mình nhận và trả đồ cả ngày. Bạn cứ nhắn trước để hẹn giờ cụ thể nhé.",
+      "Khi nhận đồ, bạn có thể kiểm tra cùng xem đồ có đủ và còn nguyên vẹn không. Chúng mình có thể chụp ảnh để đối chiếu lúc bạn trả."
+    ]
+  },
+  {
+    "id": "delivery",
+    "title": "Giao tận nơi",
+    "items": [
+      "Chúng mình giao đồ tận nơi bằng ứng dụng giao hàng. Phí ship tính theo giá trên ứng dụng và do bạn trả, cả chiều đi lẫn chiều về.",
+      "Bạn cũng có thể tự mang đồ tới trả tại {area} thay vì gọi ship trả."
+    ]
+  },
+  {
+    "id": "deposit",
+    "title": "Đặt cọc",
+    "items": [
+      "Bạn chọn một trong hai cách: để lại 1 CCCD gốc hoặc bằng lái xe kèm {idDeposit} tiền cọc, hoặc đặt cọc {cashDeposit} tiền mặt.",
+      "Chúng mình hoàn lại cọc ngay khi bạn trả đồ đủ. Nếu có khoản đền bù thì chúng mình trừ vào cọc, và báo rõ cho bạn trước khi trừ."
+    ]
+  },
+  {
+    "id": "late",
+    "title": "Thời gian thuê và trả trễ",
+    "items": [
+      "Thời gian thuê tính từ lúc bạn nhận đồ, theo gói bạn đã chọn. Giờ trả cụ thể sẽ được thống nhất khi chúng mình xác nhận đơn.",
+      "Nếu bạn trả trễ trong vòng {lateGraceHours} giờ so với giờ đã hẹn thì không bị tính phí.",
+      "Sau thời gian đó, chúng mình tính thêm 1 ngày thuê theo giá gói Trong ngày của bộ hoặc món bạn thuê. Cứ mỗi {lateFeeUnitHours} giờ trễ thêm thì tính thêm 1 ngày nữa.",
+      "Nếu biết trước mình sẽ trễ, bạn nhắn sớm để chúng mình sắp xếp và báo giá cụ thể nhé."
+    ]
+  },
+  {
+    "id": "damage",
+    "title": "Giữ gìn đồ và đền bù",
+    "items": [
+      "Trầy xước và hao mòn thông thường khi đi đường thì chúng mình không tính phí.",
+      "Nếu đồ bị hỏng nặng, vỡ hoặc mất, chúng mình xin phép thu thêm chi phí sửa. Trường hợp không sửa được thì chúng mình sẽ thu theo giá thay mới của chính món đó.",
+      "Chúng mình sẽ gửi ảnh và báo giá cụ thể trước khi trừ vào cọc. Cọc không đủ thì bạn bù phần còn thiếu, còn thừa thì chúng mình hoàn lại.",
+      "Nguyên liệu và các món bạn mua thêm (hạt cà phê, giấy lọc, bình gas...) là của bạn, không cần trả lại."
+    ]
+  },
+  {
+    "id": "gas-safety",
+    "title": "An toàn khi dùng bếp gas",
+    "items": [
+      "Bạn chỉ dùng bếp và bình gas ở nơi thoáng, ngoài trời, nền phẳng và tránh gió.",
+      "Bạn không đun nấu trong lều hoặc trong xe kín, vì khí thải có thể gây ngộ độc.",
+      "Bạn tắt hẳn gas và đợi bếp nguội rồi mới cất vào túi.",
+      "Nếu dùng sai cách và gây hư hỏng hoặc thiệt hại, bạn chịu trách nhiệm theo mục đền bù ở trên."
+    ]
+  },
+  {
+    "id": "cancel",
+    "title": "Hủy đơn và dời ngày",
+    "items": [
+      "Bạn hủy đơn hoặc dời ngày miễn phí nếu báo trước giờ nhận ít nhất {freeCancelNoticeHours} giờ. Quy định này cũng áp dụng khi bạn dời vì trời mưa hoặc thời tiết xấu.",
+      "Nếu bạn báo muộn hơn, chúng mình vẫn không thu phí thuê, nhưng bộ đồ đã giữ cho bạn có thể được nhường cho khách khác.",
+      "Nếu chúng mình đã gọi bên vận chuyển giao đồ rồi bạn mới hủy, bạn chịu giúp chúng mình chi phí vận chuyển nhé."
+    ]
+  },
+  {
+    "id": "contact",
+    "title": "Liên hệ",
+    "items": [
+      "Mọi thắc mắc, bạn nhắn chúng mình qua Zalo hoặc Tiktok ở cuối trang."
+    ]
+  }
+]
