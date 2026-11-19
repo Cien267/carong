@@ -3,13 +3,15 @@ import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 import Hero from '../components/Hero.astro';
 import FieldManual from '../components/FieldManual.astro';
+import PickupAndTerms from '../components/PickupAndTerms.astro';
 import DepositPolicy from '../components/DepositPolicy.astro';
+import Faq from '../components/Faq.astro';
 import Footer from '../components/Footer.astro';
 import ShopApp from '../components/shop/ShopApp';
 import { catalog, toShopData } from '../lib/catalog';
 import { vndShort } from '../lib/format';
 
-const { brand, durations, combos, products, deposits, manual } = catalog;
+const { brand, durations, combos, products, deposits, policies, manual, faq } = catalog;
 const base = durations[0]!;
 const fromPrice = vndShort(Math.min(...combos.map((c) => c.pricing[base.id] ?? Infinity)));
 
@@ -41,8 +43,10 @@ const jsonLd = {
   <main>
     <Hero brand={brand} fromPrice={fromPrice} comboCount={combos.length} gearCount={products.length} />
     <ShopApp client:load data={toShopData()} />
-    <FieldManual steps={manual} />
+    <FieldManual guides={manual} />
+    <PickupAndTerms policies={policies} />
     <DepositPolicy deposits={deposits} wearTearRule={brand.wearTearRule} />
+    <Faq items={faq} />
   </main>
   <Footer brand={brand} />
 </Layout>

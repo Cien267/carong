@@ -1,0 +1,50 @@
+[
+  {
+    "id": "pickup",
+    "question": "Bạn nhận đồ ở đâu và vào lúc nào?",
+    "answer": "Bạn ghé {area} nha. Chúng mình nhận và trả đồ cả ngày, bạn chỉ cần nhắn trước để hẹn giờ. Địa chỉ cụ thể mình sẽ gửi khi xác nhận đơn.",
+    "sort": 10
+  },
+  {
+    "id": "delivery",
+    "question": "Bạn ở xa thì có giao tận nơi được không?",
+    "answer": "Được chứ! Chúng mình gọi ứng dụng giao hàng chở đồ tới chỗ bạn, bạn chỉ cần thanh toán phí ship tính theo giá trên ứng dụng tại thời điểm đặt giao.",
+    "sort": 20
+  },
+  {
+    "id": "deposit",
+    "question": "Bạn cần chuẩn bị gì để đặt cọc?",
+    "answer": "Bạn chọn một trong hai cách: chụp 2 mặt CCCD gốc hoặc bằng lái xe kèm {idDeposit} tiền cọc, hoặc đặt cọc {cashDeposit}. Chúng mình sẽ hoàn lại cọc ngay khi bạn trả đồ (trừ đi phần đền bù nếu có).",
+    "sort": 30
+  },
+  {
+    "id": "late",
+    "question": "Bạn trả đồ trễ thì bị tính phí thế nào?",
+    "answer": "Nếu bạn trễ trong vòng {lateGraceHours} giờ so với giờ đã hẹn thì chúng mình không tính phí. Sau đó, chúng mình xin phép tính thêm 1 ngày thuê theo giá gói Trong ngày của bộ đó. Nếu biết trước bạn sẽ trễ, bạn cứ nhắn sớm để chúng mình cân nhắc nha.",
+    "sort": 40
+  },
+  {
+    "id": "damage",
+    "question": "Nếu bạn làm hỏng hoặc làm mất đồ thì sao?",
+    "answer": "Trầy xước và hao mòn thông thường khi đi đường thì chúng mình hoàn toàn không tính phí. Nếu đồ bị hỏng nặng, vỡ hoặc mất, chúng mình sẽ tính theo giá sửa hoặc giá thay mới. Chúng mình sẽ gửi ảnh và báo giá trước khi trừ vào tiền cọc.",
+    "sort": 50
+  },
+  {
+    "id": "cancel",
+    "question": "Bạn hủy đơn hoặc dời ngày thì có mất phí không?",
+    "answer": "Nếu bạn báo trước giờ nhận ít nhất {freeCancelNoticeHours} giờ thì hủy hay dời ngày đều miễn phí, kể cả khi bạn dời vì trời mưa. Nếu chúng mình đã gọi bên giao hàng rồi bạn mới hủy, phiền bạn chịu giúp chúng mình chi phí vận chuyển nha.",
+    "sort": 60
+  },
+  {
+    "id": "gas-safety",
+    "question": "Dùng bếp gas ngoài trời có an toàn không?",
+    "answer": "Bếp và bình gas mini an toàn nếu bạn dùng đúng cách. Bạn đặt bếp ở chỗ thoáng, nền phẳng và tránh gió, không đun trong lều hay trong xe kín, và tắt hẳn gas khi pha xong. Thẻ hướng dẫn trong túi cũng có ghi những lưu ý này.",
+    "sort": 70
+  },
+  {
+    "id": "beginner",
+    "question": "Bạn chưa từng pha moka hay pour over thì có dùng được không?",
+    "answer": "Được chứ! Mỗi bộ đều có thẻ hướng dẫn từng bước trong túi, và bạn cũng có thể xem trước ở mục Hướng dẫn pha ngay trên trang này. Nếu còn thắc mắc, bạn cứ nhắn Zalo hoặc Tiktok, chúng mình luôn sẵn sàng hỗ trợ.",
+    "sort": 80
+  }
+]

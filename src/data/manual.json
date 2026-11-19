@@ -1,23 +1,97 @@
 [
   {
-    "id": "grind",
-    "icon": "grinder",
-    "title": "Xay hạt",
-    "body": "Xay vừa đủ. Mở ống hạt đã đong sẵn, đổ vào cối.",
-    "hint": "Mỗi dụng cụ cần độ xay khác nhau, thẻ hướng dẫn có ghi sẵn."
+    "comboId": "moka-pot",
+    "tabLabel": "Moka",
+    "steps": [
+      {
+        "id": "grind",
+        "icon": "grinder",
+        "title": "Xay hạt vừa mịn",
+        "body": "Dốc trọn 1 ống hạt (18g) vào cối xay tay và xoay đều đến khi hết hạt. Cỡ bột chuẩn cho Moka sẽ mịn hơn đường cát nhưng thô hơn bột espresso một chút.",
+        "hint": "Thẻ hướng dẫn trong túi có ghi sẵn nấc xay nên dùng."
+      },
+      {
+        "id": "fill",
+        "icon": "brewer",
+        "title": "Nạp nước & nén bột",
+        "body": "Đun sôi nước bằng siêu nhôm rồi rót vào đế ấm Moka, mực nước dừng ngay dưới van an toàn. Đổ bột vào phễu lọc, gõ nhẹ cho phẳng mặt (tuyệt đối không nén chặt) rồi vặn khít thân ấm.",
+        "hint": "Đế ấm lúc này rất nóng, hãy dùng khăn lót tay khi vặn thân trên vào."
+      },
+      {
+        "id": "brew",
+        "icon": "flame",
+        "title": "Chiết xuất lửa nhỏ",
+        "body": "Đặt ấm lên bếp ga mini, mở lửa liu riu không quá đáy ấm. Khi cà phê bắt đầu trào dòng nâu sánh và nghe tiếng sôi rì rào thì tắt bếp ngay, chờ cà phê lên hết rồi rót ra ly.",
+        "hint": "Luôn cầm bằng quai nhựa/vân gỗ cách nhiệt và hạ nắp ấm trước khi rót."
+      }
+    ]
   },
   {
-    "id": "brew",
-    "icon": "flame",
-    "title": "Đun và pha",
-    "body": "Đổ nước vào ấm, bật bếp gas mini đun sôi, rồi pha bằng dụng cụ có trong bộ bạn thuê.",
-    "hint": "Chọn nơi khuất gió, nền phẳng"
+    "comboId": "pour-over",
+    "tabLabel": "Pour Over",
+    "steps": [
+      {
+        "id": "grind",
+        "icon": "grinder",
+        "title": "Xay hạt cỡ thô vừa",
+        "body": "Đổ 1 ống hạt (18g) vào cối xay và chỉnh độ thô tương đương hạt đường kính hoặc muối biển. Hạt xay đồng đều giúp dòng chảy ổn định và giữ trọn hương hoa quả.",
+        "hint": "Nếu thấy cà phê chảy quá chậm và đắng, lần sau hãy vặn cối nới lỏng thêm 2–3 nấc."
+      },
+      {
+        "id": "rinse",
+        "icon": "brewer",
+        "title": "Tráng giấy lọc & làm ấm ly",
+        "body": "Gấp mép giấy lọc, đặt khít vào phễu trên miệng ly. Rót một vòng nước nóng làm ướt đều mặt giấy rồi đổ bỏ phần nước tráng này đi.",
+        "hint": "Bước này giúp khử sạch mùi bột giấy và làm ấm ly nhôm trước khi pha."
+      },
+      {
+        "id": "pour",
+        "icon": "flame",
+        "title": "Ủ bột (Blooming) & rót dòng",
+        "body": "Đổ bột vào phễu, lắc nhẹ cho phẳng. Rót khoảng 40ml nước nóng (nhiệt độ ~90°C) thấm đều bề mặt và chờ 30 giây cho bột nở bung khí, sau đó rót tiếp theo vòng xoắn ốc từ tâm ra ngoài đến khi đủ ~220ml.",
+        "hint": "Nước vừa sôi trên siêu nhôm hãy mở nắp chờ khoảng 45–60 giây để hạ nhiệt rồi mới rót."
+      },
+      {
+        "id": "enjoy",
+        "icon": "cup",
+        "title": "Thưởng thức & thu dọn",
+        "body": "Chờ nước rút cạn qua lớp bã cà phê thì nhấc phễu đặt sang đế gỗ. Lắc nhẹ ly nhôm để hương thơm bung tỏa và thưởng thức khi còn ấm nóng.",
+        "hint": "Gói gọn giấy lọc kèm bã cà phê vào túi zip rác mang về, giữ sạch bãi trại."
+      }
+    ]
   },
   {
-    "id": "pour",
-    "icon": "cup",
-    "title": "Rót ra ly",
-    "body": "Rót cà phê ra và thong thả nhâm nhi.",
-    "hint": "Cà phê nóng, cẩn thận khi rót ra ly."
+    "comboId": "salt-coffee",
+    "tabLabel": "Cà phê muối",
+    "steps": [
+      {
+        "id": "boil",
+        "icon": "flame",
+        "title": "Đun sôi nước",
+        "body": "Rót nước vào siêu nhôm lùn, đặt bếp ga mini trên mặt phẳng chắc chắn và đun sôi già ở mức lửa vừa.",
+        "hint": "Dùng túi đồ hoặc tảng đá chắn nhẹ hướng gió để lửa bếp cháy xanh và tiết kiệm ga."
+      },
+      {
+        "id": "phin",
+        "icon": "brewer",
+        "title": "Ủ & chiết xuất phin",
+        "body": "Cho 20g bột cà phê vào phin nhôm, lắc nhẹ dàn đều và đặt lên miệng ly. Châm trước ~25ml nước sôi ủ trong 30 giây cho bột nở đều, sau đó rót thêm ~60ml nước và đậy nắp chờ cà phê nhỏ giọt hết.",
+        "hint": "Không ấn gài phin quá chặt để tránh làm nghẹt dòng chảy."
+      },
+      {
+        "id": "foam",
+        "icon": "bean",
+        "title": "Đánh bông kem muối",
+        "body": "Đổ 1 gói bột kem muối vào ly còn lại cùng ~30ml nước ấm (hoặc nước nguội). Nhúng đầu cây đánh bọt mini vào và bật máy đánh liên tục 20–25 giây cho đến khi hỗn hợp bông mịn, sánh mượt.",
+        "hint": "Nghiêng nhẹ cốc khi đánh để kem nhanh bông và không bị bắn bọt ra ngoài."
+      },
+      {
+        "id": "pour",
+        "icon": "cup",
+        "title": "Rót & thưởng thức",
+        "body": "Cho sữa đặc vào cốt cà phê vừa pha, khuấy tan đều. Nhẹ nhàng rót lớp kem muối bông mịn phủ kín lên bề mặt ly.",
+        "hint": "Nên cho trước nửa thanh sữa đặc để nếm thử độ ngọt, sau đó gia giảm tùy khẩu vị."
+      }
+    ]
   }
 ]
