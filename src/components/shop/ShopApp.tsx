@@ -151,7 +151,7 @@ export default function ShopApp({ data }: { data: ShopData }) {
                 type="button"
                 aria-pressed={categoryId === c.id}
                 onClick={() => setCategoryId(c.id)}
-                className={`min-h-11 border-[1.5px] border-dashed border-ink px-3 text-sm ${categoryId === c.id ? "bg-ink text-kraft-light" : "hover:bg-kraft-light"}`}
+                className={`min-h-11 border-2 border-dashed border-ink px-3 text-sm ${categoryId === c.id ? "bg-ink text-kraft-light" : "hover:bg-kraft-light"}`}
               >
                 {c.label}
               </button>

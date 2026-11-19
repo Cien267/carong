@@ -65,7 +65,7 @@
     color: rgb(26 23 21 / 0.72);
   }
   .stamp {
-    border: 1.5px dashed var(--color-ink);
+    border: 2px dashed var(--color-ink);
   }
 
   .btn {
@@ -77,7 +77,7 @@
     padding: 0.5rem 1rem;
     font-weight: 600;
     font-size: 0.9375rem;
-    border: 1.5px solid var(--color-ink);
+    border: 2px solid var(--color-ink);
     cursor: pointer;
     text-align: center;
   }
@@ -112,7 +112,7 @@
     padding: 0.5rem 0.75rem;
     font-size: 1rem;
     background: var(--color-kraft-light);
-    border: 1.5px solid rgb(26 23 21 / 0.7);
+    border: 2px solid rgb(26 23 21 / 0.7);
   }
   .field[aria-invalid="true"] {
     border-color: var(--color-terra);
@@ -124,7 +124,7 @@
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    border: 1.5px dashed var(--color-ink);
+    border: 2px dashed var(--color-ink);
     background-color: var(--color-kraft-deep);
     background-image: repeating-linear-gradient(
       135deg,
