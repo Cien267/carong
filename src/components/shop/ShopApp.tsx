@@ -42,6 +42,9 @@ export default function ShopApp({ data }: { data: ShopData }) {
       if (location.hash === "#do-le") {
         setTab("gear")
         document.getElementById("thue")?.scrollIntoView()
+      } else if (location.hash === "#combo") {
+        setTab("combo")
+        document.getElementById("thue")?.scrollIntoView()
       }
     }
     sync()
