@@ -8,12 +8,6 @@ npm run dev
 SITE_URL=https://carong.vn npm run build   # ra dist/, deploy thẳng lên Cloudflare Pages
 ```
 
-## Trước khi chạy thật
-
-- `src/data/brand.json`: đổi `contact.zaloPhone`, `contact.tiktokId` (đang là số giả).
-- Ảnh: điền `"image": { "src": "/img/x.webp", "alt": "..." }` trong JSON của combo / sản phẩm / addon. Để `null` thì hiện khung giữ chỗ.
-- Hero: ảnh nằm trong `src/components/Hero.astro` (khung `.ph`).
-
 ## Mô hình dữ liệu (`src/data/*.json`)
 
 Mọi bảng tham chiếu nhau qua `id` (kebab-case). `src/lib/catalog.ts` kiểm tra bằng Zod lúc build, sai là build fail:
