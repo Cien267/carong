@@ -13,7 +13,7 @@
       { "productId": "waxed-canvas-bag", "qty": 1 }
     ],
     "consumables": [
-      "02 ống hạt Specialty đong sẵn (36g)",
+      "02 ống hạt đong sẵn (36g)",
       "Túi giấy lọc tròn Moka",
       "Thẻ hướng dẫn pha"
     ],
@@ -29,7 +29,7 @@
   {
     "id": "pour-over",
     "name": "Bộ pha Pour Over",
-    "tag": "Hương hoa quả",
+    "tag": "Hương thơm, thanh nhẹ",
     "vibe": "Gu thanh nhẹ",
     "items": [
       { "productId": "glass-dripper", "qty": 1 },
@@ -60,6 +60,7 @@
     "vibe": "Gu béo ngậy, cân bằng",
     "items": [
       { "productId": "phin", "qty": 1 },
+      { "productId": "cnc-hand-grinder", "qty": 1 },
       { "productId": "milk-frother", "qty": 1 },
       { "productId": "mini-kettle-08l", "qty": 1 },
       { "productId": "gas-stove-spider", "qty": 1 },

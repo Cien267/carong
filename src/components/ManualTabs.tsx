@@ -35,9 +35,8 @@ export default function ManualTabs({ guides }: { guides: ManualGuide[] }) {
             Hướng dẫn pha
           </h2>
           <p className="mt-2 max-w-md text-ink/80">
-            Pha cà phê ngoài trời chỉ cần vài bước. Bạn chọn bộ mình định thuê
-            để xem trước cách pha, trong túi cũng có sẵn một tấm thẻ hướng dẫn
-            chi tiết.
+            Pha cà phê ngoài trời chỉ cần vài bước đơn giản. Bạn hãy chọn bộ
+            mình định thuê để xem trước cách pha.
           </p>
         </div>
         <div

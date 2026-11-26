@@ -93,8 +93,8 @@ export default function ShopApp({ data }: { data: ShopData }) {
               Chọn đồ thuê
             </h2>
             <p className="mt-2 max-w-md text-ink/80">
-              Bạn có thể thuê nguyên bộ đầy đủ, hoặc tự chọn từng món. Giá bên
-              dưới sẽ đổi theo gói thuê bạn đang chọn.
+              Thuê nguyên bộ đầy đủ hoặc tự chọn từng món. Giá bên dưới sẽ đổi
+              theo gói thuê bạn đang chọn.
             </p>
           </div>
           <DurationToggle
